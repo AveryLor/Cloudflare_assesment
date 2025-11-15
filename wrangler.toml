@@ -1,0 +1,18 @@
+name = "ai-task-assistant"
+main = "src/index.ts"
+compatibility_date = "2024-11-15"
+
+# Workers AI binding
+[ai]
+binding = "AI"
+
+# Durable Objects binding
+[[durable_objects.bindings]]
+name = "TASK_ASSISTANT"
+class_name = "TaskAssistantDO"
+script_name = "ai-task-assistant"
+
+# Durable Objects migrations
+[[migrations]]
+tag = "v1"
+new_classes = ["TaskAssistantDO"]
