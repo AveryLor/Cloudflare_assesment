@@ -268,3 +268,4 @@ Keep responses concise, friendly, and helpful. Remember context from previous me
     return this.state.conversationHistory.slice(-4);
   }
 }
+//
